@@ -1,8 +1,8 @@
 <template>
   <div>
   <logo/>
-
-    <products></products>
+  <products/>
+    <contact/>
 
   </div>
 
@@ -19,6 +19,7 @@
       'headers': Header,
       'products': Products,
       'logo': Logo,
+      'contact': Contact,
     },
 
     data () {

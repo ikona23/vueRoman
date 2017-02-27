@@ -40,8 +40,7 @@
               <h2 class="footer-title">About Us</h2>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                 the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially unchanged. </p>
+                type and scrambled. </p>
             </div>
             <div class="copyright hidden-sm hidden-xs">
               <p>Copyrights &copy; 2017 <a href="http://nextbootstrap.com/" title="">pms solution</a>. All Right Reserved.</p>
@@ -54,17 +53,17 @@
                 <h2 class="footer-title">Contact Info</h2>
                 <div class="single">
                   <i class="fa fa-map-marker"></i>
-                  <p>99 Street Address,<br>
-                    Whatever, LKG 778569, Country</p>
+                  <p>1a Bratislavska,<br>
+                    Bratislava,555 10, Slovakia</p>
                 </div>
                 <div class="single">
                   <i class="fa fa-phone"></i>
-                  <p>+977-90123987280</p>
+                  <p>+421-905 722 662</p>
                 </div>
 
                 <div class="single">
                   <i class="fa fa-envelope"></i>
-                  <p>info@example.com</p>
+                  <p>roman@masoodromana.com</p>
                 </div>
 
                 <div class="social-icon">
@@ -83,20 +82,14 @@
                 <ul class="list-unstyled">
                   <li><a href="#" title="">Home</a></li>
                   <li><a href="#" title="">About Us</a></li>
-                  <li><a href="#" title="">Registration</a></li>
-                  <li><a href="#" title="">Terms & Conditions</a></li>
-                  <li><a href="#" title="">Privacy Policy</a></li>
-                  <li><a href="#" title="">Investment</a></li>
-                  <li><a href="#" title="">Sitemap</a></li>
-                  <li><a href="#" title="">Contact Us</a></li>
-                  <li><a href="#" title="">Personal Office</a></li>
+                  <li><a href="#" title="">Contact</a></li>
                 </ul>
               </div>
             </div>
             <div class="clearfix"></div>
             <div class="copyright visible-sm visible-xs">
-              <p>Copyrights &copy; 2017 <a href="#" title="">pms solution</a>. All Right Reserved.</p>
-              <p>Developed By : <a href="#" title="">pms solution</a></p>
+              <p>Copyrights &copy; 2017 <a href="http://peterkona.com" title="">Mäso od Romana</a>. All Right Reserved.</p>
+              <p>Developed By : <a href="http://peterkona.com" title="">Peter Kona</a></p>
             </div>
           </div>
         </div>
@@ -117,14 +110,17 @@ export default {
     background-color: #F1F1F1;
   }
   #app {
-    /*background-color: white;*/
-    /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
-    /*-webkit-font-smoothing: antialiased;*/
-    /*-moz-osx-font-smoothing: grayscale;*/
-    /*text-align: center;*/
-    /*color: #2c3e50;*/
-    /*margin-top: 0px;*/
-    /*box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);*/
+    background-color: white;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0px;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1);
+  }
+  nav {
+
   }
   footer {
     background: #243c4f;
@@ -244,6 +240,6 @@ export default {
     padding-top: 40px;
   }
   div#app {
-    background: lightgray;
+    background: #E1E1E1;
   }
 </style>
