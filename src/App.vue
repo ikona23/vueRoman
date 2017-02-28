@@ -15,10 +15,10 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li>
-              <router-link to="/">Home</router-link>
+                <router-link to="/">Home</router-link>
             </li>
             <li>
-              <router-link to="/contact">Contact</router-link></li>
+                <router-link to="/contact">Contact</router-link></li>
               <li>
                 <router-link to="/products">Products</router-link>
             </li>

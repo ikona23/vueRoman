@@ -5,6 +5,7 @@
 
 <div class="container">
 
+</div>
 
     <div class="well">
       <div class="panel-body">
@@ -72,6 +73,10 @@
       </div>
     </div>
 
+  <h1>
+
+  </h1>
+
     </div>
 
     </div>
@@ -106,8 +111,18 @@
           price: 12
         },
       }
+    },
+    computed: {
+      aDoub: function (){
+        return this.maso1.name + " " + this.maso1.desc + " " + this.maso2.price
+      },
+      bDoub: function (){
+        return this.maso2.name + " " + this.maso2.decs
+      }
     }
   }
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
