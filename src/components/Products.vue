@@ -1,115 +1,67 @@
 <template>
-  <div class="row">
+  <div id="product">
+    <ul>
+      <li v-for="prod in products">
 
-  <div class="products">
-
-<div class="container">
-
-</div>
-
-    <div class="well">
-      <div class="panel-body">
-
-        <div class="lg-2 col-2 col-md-2">
-          <h3>{{maso1.name}}</h3>
-        </div>
-
-        <div class="lg-2 col-2 col-md-2">
-          <img v-bind:src=maso1.image>
-        </div>
-
-        <div class="lg-5 col-6 col-md-5">
-           <h3>{{maso1.desc}}</h3>
-        </div>
-
-        <div class="lg-2 col-2 col-md-2">
-          <h3>{{"€" + " " + maso1.price}}</h3>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="well">
-      <div class="panel-body">
-
-        <div class="lg-2 col-2 col-md-2">
-          <h3>{{maso2.name}}</h3>
-        </div>
-
-        <div class="lg-2 col-2 col-md-2">
-          <img v-bind:src=maso2.image>
-        </div>
-
-        <div class="lg-5 col-6 col-md-5">
-           <h3>{{maso2.desc}}</h3>
-        </div>
-
-        <div class="lg-2 col-2 col-md-2">
-          <h3>{{"€" + " " + maso2.price}}</h3>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="well">
-      <div class="panel-body">
-
-        <div class="lg-2 col-2 col-md-2">
-          <h3>{{maso3.name}}</h3>
-        </div>
-
-        <div class="lg-2 col-2 col-md-2">
-          <img v-bind:src=maso3.image>
-        </div>
-
-        <div class="lg-5 col-6 col-md-5">
-           <h3>{{maso3.desc}}</h3>
-        </div>
-
-        <div class="lg-2 col-2 col-md-2">
-          <h3>{{"€" + " " + maso3.price}}</h3>
-        </div>
-
-      </div>
-    </div>
-
-  <h1>
-
-  </h1>
-
-    </div>
-
-    </div>
-
-
-
+        <div class="accountBox">
+          <br>
+          <h1 class="accountHeader">{{prod.name}}</h1>
+          <br>
+          <div class="col-sm-12" >
+            <div class="animate-panel">
+              <div class="panel-body">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="stats-title">
+                    <h4>{{prod.desc}}</h4>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="stats-title">
+                    <img v-bind:src=prod.image>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                  <div class="stats-title">
+                    <h4>{{prod.price}}</h4>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </li>
+      </ul>
   </div>
 </template>
 
+
 <script>
   export default {
-    products: 'products',
+    prod: "#product",
     data () {
+
       return {
-        maso1: {
-          name: 'T-bone steak',
-          desc: '2 steaky v jednom. Ten väčší kúsok je nízka roštenka. Menší kúsok sviečkovica. Priemerná porcia má od 500 do 800g.',
-          image: 'http://lorempixel.com/100/50/sports/1/',
-          status: 'available',
-          price: 15.5
-        },
-        maso2: {
-          name: 'RibEye steak',
-          desc: 'Je rez z vysokej roštenky. Je o čosi tuhší ako sviečkovica, ale vďaka mramorovaniu a tuku dostáva hovädziu chuť. Priemerná porcia má od 300-400g.',
-          image: 'http://lorempixel.com/100/50/sports/2/',
-          price: 13
-        },
-        maso3: {
-          name: 'Flank steak',
-          desc: 'Steak z pupku. Čistá svalovina, ktorá sa krája kolmo na vlákno steaku. Vyniká čistou mäsitou chuťou a je ideálny aj do sendvičou. Steak je plochý a váži od 350g.',
-          image: 'http://lorempixel.com/100/50/sports/3/',
-          price: 12
-        },
+        products: {
+          maso1: {
+            name: 'T-bone steak',
+            desc: '2 steaky v jednom. Ten väčší kúsok je nízka roštenka. Menší kúsok sviečkovica. Priemerná porcia má od 500 do 800g.',
+            image: 'http://lorempixel.com/100/50/sports/1/',
+            status: 'available',
+            price: 15.5 + "€"
+          },
+          maso2: {
+            name: 'RibEye steak',
+            desc: 'Je rez z vysokej roštenky. Je o čosi tuhší ako sviečkovica, ale vďaka mramorovaniu a tuku dostáva hovädziu chuť. Priemerná porcia má od 300-400g.',
+            image: 'http://lorempixel.com/100/50/sports/2/',
+            price: 13 + "€"
+          },
+          maso3: {
+            name: 'Flank steak',
+            desc: 'Steak z pupku. Čistá svalovina, ktorá sa krája kolmo na vlákno steaku. Vyniká čistou mäsitou chuťou a je ideálny aj do sendvičou. Steak je plochý a váži od 350g.',
+            image: 'http://lorempixel.com/100/50/sports/3/',
+            price: 12 + "€"
+          },
+        }
       }
     },
     computed: {
